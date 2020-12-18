@@ -9,6 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'eclipse'
 }
 
 repositories {
@@ -29,7 +30,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'jp.ac.uryukyu.ie.e205758.App'
+    mainClass = 'Main'
 }
 
 tasks.named('test') {
