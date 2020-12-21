@@ -28,34 +28,66 @@ public class Enemy {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
     
+    /**
+     * NameのGetter。モンスターの名前が返ってくる。
+     * @return　モンスターの名前
+     */
     public String getName(){
         return name;
     }
-
+    
+    /**
+     * NameのSetter。モンスター名を設定する。
+     * @param name　モンスター名
+     */
     public void setName(String name){
         this.name = name;
     }
 
+    /**
+     * HitpointのGetter。モンスターのHPが返ってくる。
+     * @return　モンスターのHP
+     */
     public int getHitPoint(){
         return hitPoint;
     }
 
+    /**
+     * HitpointのSetter。モンスターのHPを設定する。
+     * @param hitPoint　モンスターのHP
+     */
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
 
+    /**
+    * AttackのGetter。モンスターの攻撃力が返ってくる
+    * @return　モンスターの攻撃力
+    */
     public int getAttack(){
         return attack;
     }
 
+    /**
+     * AttackのSetter。モンスターの攻撃力を設定する。
+     * @param attack　モンスターの攻撃力
+     */
     public void setAttack(int attack){
         this.attack = attack;
     }
 
+    /**
+     * Deadの確認
+     * @return　敵の生死状態
+     */
     public boolean isDead(){
         return dead;
     }
 
+    /**
+     * DeadのSetter。生死状態の設定をする
+     * @param dead　生死状態
+     */
     public void setDead(boolean dead){
         this.dead = dead;
     }
